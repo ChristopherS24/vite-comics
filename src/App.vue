@@ -14,25 +14,57 @@ export default {
 </script>
 
 <template>
-  <div>
     <!-- Utilizzo del componente -->
     <AppHeader />
 
-    <header>
-      header
-    </header>
+
     
     <main>
-      main
+      <div class="container">
+        <div class="main-content">
+          --&gt; Content goes here &lt;--
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="main-content-two">
+          hola
+
+        </div>
+
+      </div>
     </main>
 
     <footer>
-      footer
+      <div class="container">
+        <div class="row">
+          <div class="col-1-3">
+            <img src="/img/footer-bg.jpg" alt="footerback">
+          </div>
+          <div class="col-1-3">
+
+          </div>
+
+        </div>
+        footer
+      </div>
     </footer>
 
-  </div>
 </template>
 
 <style lang="scss">
 @use 'assets/scss/main' as *;
+
+
+main .main-content {
+  text-align: left;
+  font-size: 2rem;
+  color: white;
+  background: black
+}
+
+main .main-content-two {
+  background-color: skyblue;
+  color: white;
+}
 </style>
