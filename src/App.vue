@@ -39,13 +39,17 @@ export default {
     </main>
 
     <footer>
-      <div class="container">
+      <div class="container footer-container">
         <div class="row">
-          <div class="col-1-3">
-            <h4>
-              DC COMICS
-            </h4>
+
+          <div class="links">
+
             <ul>
+              <li>
+                <h4>
+              DC COMICS
+                </h4>
+              </li>
               <li>
                 <a href="#">
                   link
@@ -78,10 +82,13 @@ export default {
               </li>
             </ul>
 
-            <h4>
-              SHOP
-            </h4>
+
             <ul>
+              <li>
+                <h4>
+                SHOP
+                </h4>
+              </li>
               <li>
                 <a href="#">
                   link
@@ -94,10 +101,13 @@ export default {
               </li>
               </ul>
 
-              <h4>
-              DC
-            </h4>
+
             <ul>
+              <li>
+                <h4>
+                  DC
+                </h4>
+            </li>
               <li>
                 <a href="#">
                   link
@@ -155,10 +165,13 @@ export default {
               </li>
             </ul>
 
-            <h4>
-              SITIES
-            </h4>
+
             <ul>
+              <li>
+                <h4>
+                SITIES
+                </h4>
+              </li>
               <li>
                 <a href="#">
                   link
@@ -192,9 +205,25 @@ export default {
             </ul>
 
           </div>
+
         </div>
+
+        
       </div>
     </footer>
+
+    <div class="footerbottom">
+      <button>
+        SIGN-UP NOW!
+      </button>
+      <div class="icons">
+        <img src="/img/footer-facebook.png" alt="fb">
+        <img src="/img/footer-twitter.png" alt="twitter">
+        <img src="/img/footer-youtube.png" alt="yt">
+        <img src="/img/footer-pinterest.png" alt="pinterest">
+        <img src="/img/footer-periscope.png" alt="periscope">
+      </div>
+    </div>
 
 </template>
 
@@ -226,8 +255,49 @@ main .container .main-content-two {
 
 }
 
+.links {
+  display: flex;
+  width: 100%;
+}
+
 //FOOTER
 footer {
-  background-image: url("/img/footer-bg.jpg")
+  background-image: url("/img/footer-bg.jpg");
+  
 }
+
+footer h4 {
+
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+  
+}
+
+footer ul li a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+}
+
+
+.icons {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+}
+
+.footer-container {
+  background-image: url(/img/dc-logo-bg.png) ;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position-x: right;
+}
+
+.footerbottom {
+  background-color: rgb(63, 60, 60);
+}
+
 </style>
