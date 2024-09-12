@@ -20,33 +20,179 @@ export default {
 
     
     <main>
-      <div class="container">
-        <div class="main-content">
-          --&gt; Content goes here &lt;--
+      <div class="backgblack">
+        <div class="container">
+          <div class="main-content">
+            --&gt; Content goes here &lt;--
+          </div>
         </div>
       </div>
 
-      <div class="container">
-        <div class="main-content-two">
-          hola
-
+      <div class="backgblue">
+        <div class="container">
+          <div class="main-content-two">
+            hola
+          </div>
         </div>
-
       </div>
+
     </main>
 
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-1-3">
-            <img src="/img/footer-bg.jpg" alt="footerback">
-          </div>
-          <div class="col-1-3">
+            <h4>
+              DC COMICS
+            </h4>
+            <ul>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+            </ul>
+
+            <h4>
+              SHOP
+            </h4>
+            <ul>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              </ul>
+
+              <h4>
+              DC
+            </h4>
+            <ul>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+            </ul>
+
+            <h4>
+              SITIES
+            </h4>
+            <ul>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  link
+                </a>
+              </li>
+            </ul>
 
           </div>
-
         </div>
-        footer
       </div>
     </footer>
 
@@ -55,16 +201,33 @@ export default {
 <style lang="scss">
 @use 'assets/scss/main' as *;
 
+//MAIN
+.backgblack {
+  width: 100%;
+  background-color: black;
+}
 
-main .main-content {
+.backgblue {
+  width: 100%;
+  background-color: skyblue;
+
+}
+
+main .container .main-content {
   text-align: left;
   font-size: 2rem;
   color: white;
-  background: black
+  width: 100%;
 }
 
-main .main-content-two {
+main .container .main-content-two {
   background-color: skyblue;
   color: white;
+
+}
+
+//FOOTER
+footer {
+  background-image: url("/img/footer-bg.jpg")
 }
 </style>

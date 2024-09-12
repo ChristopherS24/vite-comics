@@ -11,10 +11,10 @@ export default {
 <template>
     <header>
       <div class="container">
-        <div>
+        <div class="img-header">
           <img src="/img/dc-logo.png" alt="DC Logo">
         </div>
-        <nav>
+        <nav class="header-links">
           <ul>
             <li>
               <a href="#">
@@ -94,4 +94,17 @@ header ul li a {
   color: black;
   text-decoration: none;
 }
+
+.img-header {
+  width: 5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header-links {
+  width: 80%;
+}
+
 </style>
