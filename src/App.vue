@@ -31,7 +31,20 @@ export default {
       <div class="backgblue">
         <div class="container">
           <div class="main-content-two">
-            hola
+            <div class="infos">
+              <img src="/img/buy-comics-digital-comics.png" alt="DC Merchandise">
+              <p>DIGITAL COMICS</p>
+
+              <img src="/img/buy-comics-merchandise.png" alt="">
+              <p>DC MERCHANDISE</p>
+
+              <img src="/img/buy-comics-subscriptions.png" alt="">
+              <p>SUBSCRIPTIONS</p>
+              
+              <img src="/img/buy-comics-shop-locator.png" alt="">
+              <p>COMIC SHOP LOCATOR</p>
+              
+            </div>
           </div>
         </div>
       </div>
@@ -255,6 +268,17 @@ main .container .main-content-two {
 
 }
 
+.infos {
+  //background-image: url("/img/buy-comics-merchandise.png");
+display: flex;
+flex-wrap: wrap;
+}
+
+.infos p {
+  display: flex;
+  align-items: center;
+}
+
 .links {
   display: flex;
   width: 100%;
@@ -267,13 +291,12 @@ footer {
 }
 
 footer h4 {
-
   color: white;
 }
 
 footer ul {
   list-style: none;
-  
+
 }
 
 footer ul li a {

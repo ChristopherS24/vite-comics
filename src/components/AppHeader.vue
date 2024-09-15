@@ -95,6 +95,10 @@ header ul li a {
   text-decoration: none;
 }
 
+header ul li a:hover {
+  color: skyblue;
+}
+
 .img-header {
   width: 5%;
 }
