@@ -2,7 +2,49 @@
 export default {
   data() {
     return { 
-      message: ''
+      headerLinks: [
+        {
+          label: 'CHARACTERS',
+          url: '#'
+        },
+        {
+          label: 'COMICS',
+          url: '#'
+        },
+        {
+          label: 'MOVIES',
+          url: '#'
+        },
+        {
+          label: 'TV',
+          url: '#'
+        },
+        {
+          label: 'GAMES',
+          url: '#'
+        },
+        {
+          label: 'COLLECTIBLES',
+          url: '#'
+        },
+        {
+          label: 'VIDEOS',
+          url: '#'
+        },
+        {
+          label: 'FANS',
+          url: '#'
+        },
+        {
+          label: 'NEWS',
+          url: '#'
+        },
+        {
+          label: 'SHOP',
+          url: '#'
+        }
+
+      ]
     }
   }
 }
@@ -16,54 +58,10 @@ export default {
         </div>
         <nav class="header-links">
           <ul>
-            <li>
-              <a href="#">
-                CHARACTERS
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                COMICS
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                MOVIES
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                TV
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                GAMES
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                COLLECTIBLES
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                VIDEOS
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                FANS
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                NEWS
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                SHOP
+            <li v-for="(link, i) in headerLinks" :key="i">
+
+              <a :href="link.url">
+                {{ link.label }}
               </a>
             </li>
           </ul>
