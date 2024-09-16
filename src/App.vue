@@ -3,10 +3,50 @@ import AppHeader from './components/AppHeader.vue';
 
 export default {
   data() {
-    return
-    
+    return { 
+      footerLinksOne: [
+        {
+          label: 'Characters',
+          url: '#'
+        },
+        {
+          label: 'Comics',
+          url: '#'
+        },
+        {
+          label: 'Movies',
+          url: '#'
+        },
+        {
+          label: 'TV',
+          url: '#'
+        },
+        {
+          label: 'Games',
+          url: '#'
+        },
+        {
+          label: 'Videos',
+          url: '#'
+        },
+        {
+          label: 'News',
+          url: '#'
+        }
+      ],
+      footerLinksTwo: [
+        {
+          label: 'Shop DC',
+          url: '#'
+        },
+        {
+          label: 'Shop DC Collectibles',
+          url: '#'
+        }
+      ]
+    }
   },
-  // Dichiarazione del componente
+  // 2) Dichiarazione del componente
   components: {
     AppHeader
   }
@@ -63,36 +103,12 @@ export default {
               DC COMICS
                 </h4>
               </li>
-              <li>
-                <a href="#">
-                  link
+              <li v-for="(link, i) in footerLinksOne" :key="i">
+                <a :href="link.url">
+                  {{ link.label }}
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  link
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  link
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  link
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  link
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  link
-                </a>
-              </li>
+
             </ul>
 
 
@@ -102,14 +118,9 @@ export default {
                 SHOP
                 </h4>
               </li>
-              <li>
-                <a href="#">
-                  link
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  link
+              <li v-for="(link, i) in footerLinksTwo" :key="i">
+                <a :href="link.url">
+                  {{ link.label }}
                 </a>
               </li>
               </ul>

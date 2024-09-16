@@ -59,7 +59,6 @@ export default {
         <nav class="header-links">
           <ul>
             <li v-for="(link, i) in headerLinks" :key="i">
-
               <a :href="link.url">
                 {{ link.label }}
               </a>
