@@ -1,5 +1,6 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
 
 export default {
   data() {
@@ -48,7 +49,8 @@ export default {
   },
   // 2) Dichiarazione del componente
   components: {
-    AppHeader
+    AppHeader,
+    AppMain
   }
 }
 </script>
@@ -56,40 +58,7 @@ export default {
 <template>
     <!-- Utilizzo del componente -->
     <AppHeader />
-
-
-    
-    <main>
-      <div class="backgblack">
-        <div class="container">
-          <div class="main-content">
-            --&gt; Contents goes here &lt;--
-          </div>
-        </div>
-      </div>
-
-      <div class="backgblue">
-        <div class="container">
-          <div class="main-content-two">
-            <div class="infos">
-              <img src="/img/buy-comics-digital-comics.png" alt="DC Merchandise">
-              <p>DIGITAL COMICS</p>
-
-              <img src="/img/buy-comics-merchandise.png" alt="">
-              <p>DC MERCHANDISE</p>
-
-              <img src="/img/buy-comics-subscriptions.png" alt="">
-              <p>SUBSCRIPTIONS</p>
-              
-              <img src="/img/buy-comics-shop-locator.png" alt="">
-              <p>COMIC SHOP LOCATOR</p>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </main>
+    <AppMain />
 
     <footer>
       <div class="container footer-container">
@@ -231,7 +200,6 @@ export default {
           </div>
 
         </div>
-
         
       </div>
     </footer>
@@ -256,8 +224,9 @@ export default {
 
 //MAIN
 .backgblack {
-  width: 100%;
-  background-color: black;
+  background-image: url('/img/jumbotron.jpg');
+  height: 350px;
+  background-size: 100%;
 }
 
 .backgblue {
@@ -266,12 +235,6 @@ export default {
 
 }
 
-main .container .main-content {
-  text-align: left;
-  font-size: 2rem;
-  color: white;
-  width: 100%;
-}
 
 main .container .main-content-two {
   background-color: skyblue;

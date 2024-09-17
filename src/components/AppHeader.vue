@@ -71,12 +71,15 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
+@mixin simple-ul {
+  list-style: none;
+}
 
 header {
   padding: 20px 0;
 
     ul {
-    list-style: none;
+    @include simple-ul;
     display: flex;
     align-items: center;
     justify-content: center;
