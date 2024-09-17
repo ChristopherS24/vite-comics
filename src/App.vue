@@ -63,7 +63,7 @@ export default {
       <div class="backgblack">
         <div class="container">
           <div class="main-content">
-            --&gt; Content goes here &lt;--
+            --&gt; Contents goes here &lt;--
           </div>
         </div>
       </div>
@@ -298,7 +298,7 @@ flex-wrap: wrap;
 //FOOTER
 footer {
   background-image: url("/img/footer-bg.jpg");
-  
+  background-size: 100% auto;
 }
 
 footer h4 {

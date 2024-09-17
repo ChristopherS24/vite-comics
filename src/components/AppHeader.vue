@@ -74,26 +74,28 @@ export default {
 
 header {
   padding: 20px 0;
-}
 
-header ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
+    ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    li {
+      a {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
 
-header ul li a {
-  display: inline-block;
-  margin: 5px;
-  padding: 10px;
-  color: black;
-  text-decoration: none;
-}
+        &:hover {
+          color: skyblue;
+        }
 
-header ul li a:hover {
-  color: skyblue;
+      }
+    }
+  }
 }
 
 .img-header {
